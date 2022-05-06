@@ -9,8 +9,8 @@ import { ServicesComponent } from './services/services.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { TechnologiesComponent } from './technologies/technologies.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
-import { NavbraComponent } from './navbra/navbra.component';
-import { FooterComponent } from './footer/footer.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 
 @NgModule({
   declarations: [
@@ -21,12 +21,13 @@ import { FooterComponent } from './footer/footer.component';
     ProjectsComponent,
     TechnologiesComponent,
     ContactUsComponent,
-    NavbraComponent,
-    FooterComponent
+    NavbarComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
