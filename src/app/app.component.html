@@ -1,6 +1,4 @@
 <!-- Nav tabs -->
-<div class="collapse navbar-collapse" id="collapsibleNavId">
-    <div class="container-fluid position-absolute p-0 m-0 w-100 h-100 bg-dark">
 
 
         <ul class="navbar-nav me-auto mt-lg-0 ">
@@ -26,15 +24,43 @@
     </div>
 </div>
 <nav class="navbar navbar-expand-md navbar-light bg-transparent">
+<nav class="navbar  navbar-expand-md fixed-top navbar-light   ">
     <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler d-lg-none " type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#">
+            <img src="../assets/img/Multicolor.png">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon border-0"></span>
     </button>
-
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <div class="container-fluid position-absolute p-0 m-0 w-100 h-100  ">
+                <ul class="navbar-nav me-auto mt-lg-0 w-100  h-100 d-flex justify-content-center align-items-center">
+                    <li class="nav-item active ">
+                        <a class="nav-link text-dark" href="#">Home <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Technologies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </nav>
 
 
 
 <router-outlet></router-outlet> 
+<app-home></app-home>
+<app-about-us></app-about-us>
