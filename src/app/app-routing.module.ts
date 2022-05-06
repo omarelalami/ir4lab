@@ -23,6 +23,9 @@ component: AboutUSComponent
 },
 { path: 'projects',
 component: ProjectsComponent
+},
+{ path: 'contact',
+component: ContactUsComponent
 }
 ];
 
