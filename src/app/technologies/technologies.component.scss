@@ -21,6 +21,7 @@
     height: 400px;
     margin: 35px;
     top: 60px;
+    z-index: 0;
 }
 
 .card .face {
@@ -116,7 +117,7 @@
     top: 105px;
     position: relative;
     position: fixed;
-    z-index: 100;
+    z-index: 1;
 }
 
 .ko {
