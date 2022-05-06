@@ -21,8 +21,8 @@
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	font-weight: 900;
+	
 }
-
 .cards_wrap{
 	padding: 20px;
 	width: 100%;
@@ -100,4 +100,14 @@
 	.wrapper .header{
 		font-size: 14px;
 	}
+}
+.wrapper{
+	
+	top: 98px;
+	position: relative;	
+	scroll-behavior: auto;
+}
+.cards_wrap
+{overflow-y: scroll;
+
 }
