@@ -10,6 +10,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { TechnologiesComponent } from './technologies/technologies.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { NavbraComponent } from './navbra/navbra.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NavbraComponent } from './navbra/navbra.component';
     ProjectsComponent,
     TechnologiesComponent,
     ContactUsComponent,
-    NavbraComponent
+    NavbraComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
