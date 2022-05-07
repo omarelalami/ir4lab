@@ -36,7 +36,7 @@ footer {
     max-width: 500px;
     margin: 10px auto;
     line-height: 28px;
-    font-size: 14px;
+    font-size: 16px;
     color: #cacdd2;
 }
 
@@ -55,18 +55,14 @@ footer {
 .socials a {
     text-decoration: none;
     color: #fff;
-    border: 1.1px solid white;
+    border: 2px solid white;
     padding: 5px;
+    width: 3px;
     border-radius: 50%;
 }
 
-.socials a fa-icon {
-    font-size: 1.1rem;
-    width: 20px;
-    transition: color .4s ease;
-}
 
-.socials a:hover fa-icon {
+.socials :hover  {
     color: aqua;
 }
 
