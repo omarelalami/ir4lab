@@ -12,7 +12,8 @@
     top: 0px;
     border-radius: 10px;
     z-index: 0;
-    overflow: hidden;
+    overflow: visible;
+    border: none;
 }
 
 .card .face {
@@ -97,8 +98,10 @@
 }
 
 .ko {
+    margin: 0 50px;
     text-align: center;
     font-size: 1rem;
     font-family: 'Franklin Gothic Medium';
     color: rgb(18, 175, 214);
+    background: rgba($color: rgb(18, 175, 214), $alpha: 0.1);
 }

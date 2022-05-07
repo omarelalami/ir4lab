@@ -12,6 +12,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 import { FooterComponent } from './footer/footer.component';
+import { FactsComponent } from './facts/facts.component';
+import { AnimatedDigitComponent } from './animated-digit/animated-digit.component';
 
 @NgModule({
   declarations: [
@@ -23,13 +25,16 @@ import { FooterComponent } from './footer/footer.component';
     TechnologiesComponent,
     ContactUsComponent,
     NavbarComponent,
-    FooterComponent
-    
+    FooterComponent,
+    FactsComponent,
+    AnimatedDigitComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
