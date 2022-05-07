@@ -1,28 +1,21 @@
-
-
 .fg {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    
-    
 }
 
 .card {
-   
     width: 20rem;
     height: 400px;
     margin: 60px;
     top: 0px;
     border-radius: 10px;
     z-index: 0;
-    overflow: hidden;;
-    
+    overflow: hidden;
+    ;
     top: -60px;
-    
-    
 }
 
 .card .face {
@@ -113,26 +106,16 @@
     text-transform: uppercase;
     letter-spacing: 5px;
     font-weight: 900;
-}
-
-.header {
     top: 73px;
     position: relative;
-    position: fixed;
     z-index: 1;
 }
 
 .ko {
-   
-    
     text-align: center;
-    font-size:1rem;
+    font-size: 1rem;
     display: inline-block;
-   
     margin-top: 150px;
-    font-family:'Franklin Gothic Medium';
+    font-family: 'Franklin Gothic Medium';
     color: rgb(18, 175, 214);
-   
-   
 }
-
