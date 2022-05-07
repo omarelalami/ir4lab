@@ -6,7 +6,7 @@
 
 
 footer{
-    position: absolute;
+    display: block;
     bottom: 0;
     left: 0;
     right: 0;
@@ -14,8 +14,9 @@ footer{
     height: auto;
     width: 100vw;
 
-    padding-top: 40px;
+    padding-top: 1px;
     color: #fff;
+    position:static;
 }
 .footer-content{
     display: flex;

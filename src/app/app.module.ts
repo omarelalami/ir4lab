@@ -11,6 +11,7 @@ import { TechnologiesComponent } from './technologies/technologies.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
     TechnologiesComponent,
     ContactUsComponent,
     NavbarComponent,
+    FooterComponent
     
   ],
   imports: [
