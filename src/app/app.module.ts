@@ -17,6 +17,8 @@ import { AnimatedDigitComponent } from './animated-digit/animated-digit.componen
 import {NgsRevealModule} from 'ngx-scrollreveal';
 import {NgsRevealConfig} from 'ngx-scrollreveal';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { SlideToggleModule } from 'ngx-slide-toggle';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     FontAwesomeModule,
     BrowserAnimationsModule,
+    MatSlideToggleModule,
+    SlideToggleModule
 
   ],
   providers: [NgsRevealConfig],
