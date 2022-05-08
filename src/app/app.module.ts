@@ -15,6 +15,8 @@ import { FooterComponent } from './footer/footer.component';
 import { FactsComponent } from './facts/facts.component';
 import { AnimatedDigitComponent } from './animated-digit/animated-digit.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { SlideToggleModule } from 'ngx-slide-toggle';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     FontAwesomeModule,
     BrowserAnimationsModule,
+    MatSlideToggleModule,
+    SlideToggleModule
 
   ],
   providers: [],
