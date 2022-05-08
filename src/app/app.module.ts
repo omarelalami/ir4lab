@@ -14,6 +14,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 import { FooterComponent } from './footer/footer.component';
 import { FactsComponent } from './facts/facts.component';
 import { AnimatedDigitComponent } from './animated-digit/animated-digit.component';
+import {NgsRevealModule} from 'ngx-scrollreveal';
+import {NgsRevealConfig} from 'ngx-scrollreveal';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { SlideToggleModule } from 'ngx-slide-toggle';
@@ -34,6 +36,7 @@ import { SlideToggleModule } from 'ngx-slide-toggle';
 
   ],
   imports: [
+    NgsRevealModule,
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
@@ -42,7 +45,7 @@ import { SlideToggleModule } from 'ngx-slide-toggle';
     SlideToggleModule
 
   ],
-  providers: [],
+  providers: [NgsRevealConfig],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
