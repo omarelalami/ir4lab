@@ -14,6 +14,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 import { FooterComponent } from './footer/footer.component';
 import { FactsComponent } from './facts/facts.component';
 import { AnimatedDigitComponent } from './animated-digit/animated-digit.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { AnimatedDigitComponent } from './animated-digit/animated-digit.componen
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
+    BrowserAnimationsModule,
 
   ],
   providers: [],
