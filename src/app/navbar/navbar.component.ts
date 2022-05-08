@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { ModethemService } from '../modethem.service';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -7,7 +8,10 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 })
 export class NavbarComponent implements OnInit {
   faBars = faBars;
-  constructor() { }
+ 
+  constructor(public mode:ModethemService) {
+    
+   }
 
   ngOnInit(): void {
   }
@@ -53,6 +57,5 @@ export class NavbarComponent implements OnInit {
   block: 'start',
   inline: 'nearest'})
   }
-
 
 }
