@@ -1,3 +1,4 @@
+
 .fg {
     align-items: center;
     justify-content: center;
@@ -110,6 +111,43 @@
     font-family: 'Franklin Gothic Medium';
     color: rgb(18, 175, 214);
     background: rgba($color: rgb(18, 175, 214), $alpha: 0.1);
+}
+////////////////////////////////////////////////////////////////////////////////////
+.light {
+    .card .front {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000;
+    }
+
+.ko{
+    color: rgb(18, 175, 214);
+    background: rgba($color: rgb(18, 175, 214), $alpha: 0.1);
+}
+.card .back .link a {
+    color: #f3f3f3;
+}
+
+.card .back .link {
+    border-top: solid 1px #f3f3f3;
+    
+}
+.fg {
+
+  background-color: rgba($color: (#fff), $alpha: 0.9);
+}
+.card .back {
+
+    box-shadow: 0 5px 10px #000;
+}
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+.dark{
+    .ko{
+
+        color:#10f32e;
+        background: #fff;
+    }
 }
 
 #technologies {
