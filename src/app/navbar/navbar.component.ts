@@ -60,12 +60,6 @@ export class NavbarComponent implements OnInit {
   inline: 'nearest'})
   }
 
-toMode():boolean
-{
-  console.log(this.mode.toMode());
-  return this.mode.toMode();
- 
-}
 
 
 
