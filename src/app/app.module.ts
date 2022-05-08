@@ -20,6 +20,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { SlideToggleModule } from 'ngx-slide-toggle';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,6 +44,7 @@ import { SlideToggleModule } from 'ngx-slide-toggle';
     BrowserAnimationsModule,
     MatSlideToggleModule,
     SlideToggleModule
+
 
   ],
   providers: [NgsRevealConfig],
