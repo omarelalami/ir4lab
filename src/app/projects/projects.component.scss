@@ -37,13 +37,12 @@ $color-box-7: #de8b3e;
         height: 400px;
         display: block;
         background-size: cover;
-        float: left;
+        // float: left;
         border-radius: 15px;
         position: relative;
         overflow: hidden;
         background-position: center;
         margin: 10px;
-        right: -25%;
     }
     .cards--one {
         &:hover {
@@ -63,7 +62,6 @@ $color-box-7: #de8b3e;
         &::after {
             content: '';
             display: block;
-            position: absolute;
             height: 70px;
             transform: rotate(-3deg);
             background: $color-box-4;
@@ -234,4 +232,8 @@ $color-box-7: #de8b3e;
             }
         }
     }
+}
+
+#projects {
+    padding-top: 75px;
 }
