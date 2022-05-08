@@ -16,6 +16,8 @@ import { FactsComponent } from './facts/facts.component';
 import { AnimatedDigitComponent } from './animated-digit/animated-digit.component';
 import {NgsRevealModule} from 'ngx-scrollreveal';
 import {NgsRevealConfig} from 'ngx-scrollreveal';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +38,7 @@ import {NgsRevealConfig} from 'ngx-scrollreveal';
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
+    BrowserAnimationsModule,
 
   ],
   providers: [NgsRevealConfig],
