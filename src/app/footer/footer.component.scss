@@ -9,12 +9,17 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    background: #111;
+    background: rgba($color: #fff, $alpha: 0.5);
+    border-top: 4px solid white;
     height: auto;
     width: 100vw;
     padding-top: 1px;
     color: #fff;
     position: static;
+}
+
+h3 {
+    color: #151F3E;
 }
 
 .footer-content {
@@ -37,7 +42,12 @@ footer {
     margin: 10px auto;
     line-height: 28px;
     font-size: 16px;
-    color: #cacdd2;
+    color: #fff;
+}
+
+.footer-content img {
+    width: 169px;
+    padding: 20px;
 }
 
 .socials {
@@ -45,7 +55,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0 3rem 0;
+    margin: 5px;
 }
 
 .socials li {
@@ -54,35 +64,35 @@ footer {
 
 .socials a {
     text-decoration: none;
-    color: #fff;
-    border: 2px solid white;
+    color: #151F3E;
+    border: 2px solid #151F3E;
     padding: 5px;
-    width: 3px;
     border-radius: 50%;
 }
 
+.socials a fa-icon {
+    padding: 3px;
+}
 
-.socials :hover  {
+.socials :hover {
     color: aqua;
 }
 
 .footer-bottom {
     background: #000;
     width: 100vw;
-    padding: 20px;
-    padding-bottom: 40px;
     text-align: center;
+    padding: 10px;
 }
 
 .footer-bottom p {
-    float: left;
     font-size: 14px;
     word-spacing: 2px;
     text-transform: capitalize;
 }
 
 .footer-bottom p a {
-    color: #44bae8;
+    color: #fff;
     font-size: 16px;
     text-decoration: none;
 }
@@ -107,7 +117,7 @@ footer {
 }
 
 .footer-menu ul li a {
-    color: #cfd2d6;
+    color: #F2F2FB;
     text-decoration: none;
 }
 

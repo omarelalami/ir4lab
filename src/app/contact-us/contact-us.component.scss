@@ -108,6 +108,24 @@ textarea {
         grid-template-columns: 1fr;
     }
     .left {
-        height: 200px;
+        height: 300px;
     }
+}
+
+.left h4 {
+    padding-top: 30px;
+    text-align: start;
+    color: #fff;
+}
+
+.left a {
+    text-decoration: none;
+}
+
+.left h4 fa-icon {
+    padding-right: 10px;
+}
+
+.left {
+    padding: 20px;
 }
