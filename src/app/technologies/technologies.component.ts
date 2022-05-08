@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ModethemService } from '../modethem.service';
+
 
 @Component({
   selector: 'app-technologies',
@@ -9,8 +9,8 @@ import { ModethemService } from '../modethem.service';
 export class TechnologiesComponent implements OnInit {
 
   mode:boolean =true;
-  constructor(changeMode : ModethemService) { 
-    this.mode=changeMode.toMode();
+  constructor() { 
+    
   }
 
   ngOnInit(): void {
