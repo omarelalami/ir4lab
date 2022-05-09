@@ -42,21 +42,50 @@
             position: absolute;
             width: 100%;
             z-index: -5;
-            border-bottom: 10px solid #fff;
-            border-left: 10px solid #fff;
-            border-right: 10px solid #fff;
+            border-left: 10px solid rgba($color: #fff, $alpha: 0.1);
+            border-right: 10px solid rgba($color: #fff, $alpha: 0.1);
             background: rgba($color: #151F3E, $alpha: 1);
             // border-radius: 20px;
             height: 80vh;
             clip-path: polygon(0 0, 100% 0, 100% 71%, 0 100%);
         }
         
+        .hero-border {
+            z-index: -8;
+            position: absolute;
+            height: 85vh;
+            width: 100vw;
+            background-color: rgba($color: #fff, $alpha: 1);
+            clip-path: polygon(0 0, 100% 0, 100% 71%, 0 100%);
+        }
+        
         .hero-bg {
+            border-left: 10px solid #fff;
             z-index: -10;
             position: absolute;
             height: 100vh;
-            width: 100vw;
-            background-color: rgba($color: #fff, $alpha: 0.5);
+            width: 100%;
+            background-color: rgba($color: #fff, $alpha: 1);
+        }
+        
+        .hero-card {
+            margin: 10px;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            border: 1px solid rgba($color: #000000, $alpha: 0.1);
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+            padding: 15px;
+            position: absolute;
+            color: #151F3E;
+            max-width: 700px;
+            text-align: justify;
+            background-color: white;
+            bottom: 20px;
+        }
+        
+        .hero-card h6 {
+            font-weight: 600 !important;
+            font-size: 14px !important;
         }
         
         .btn-primary {
@@ -70,9 +99,8 @@
             position: absolute;
             width: 100%;
             z-index: -2;
-            border-bottom: 10px solid #fff;
-            border-left: 10px solid #fff;
-            border-right: 10px solid #fff;
+            border-left: 10px solid rgba($color: #fff, $alpha: 0.1);
+            border-right: 10px solid rgba($color: #fff, $alpha: 0.1);
             background: rgba($color: #151F3E, $alpha: 0.5);
             // border-radius: 20px;
             height: 80vh;
@@ -86,9 +114,8 @@
             height: 80vh;
             clip-path: polygon(0 0, 100% 0, 100% 71%, 0 100%);
             background-image: url('../../assets/lastOnline.svg');
-            border-bottom: 10px solid #fff;
-            border-left: 10px solid #fff;
-            border-right: 10px solid #fff;
+            border-left: 10px solid rgba($color: #fff, $alpha: 0.1);
+            border-right: 10px solid rgba($color: #fff, $alpha: 0.1);
             background-repeat: no-repeat;
             background-position-x: center;
             background-position-y: end;
@@ -96,4 +123,24 @@
         
         #home {
             height: 100vh;
+            box-shadow: none;
+        }
+        
+        @media (min-width:1024px) {
+            .hero-card h6 {
+                font-size: 24px !important;
+            }
+            .hero-card {
+                right: 50px;
+            }
+        }
+        
+        @media (min-width:660px) and (max-width:1024px) {
+            .hero-card h6 {
+                font-size: 20px !important;
+            }
+            .hero-card {
+                right: 50px;
+                max-width: 550px;
+            }
         }
