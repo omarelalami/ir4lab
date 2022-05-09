@@ -1,149 +1,121 @@
-.fg {
-    align-items: center;
-    justify-content: center;
-    background-color: rgba($color: (#fff), $alpha: 0.7);
-    border-top: 4px solid #fff;
-    border-bottom: 4px solid #fff;
-}
-
-.collection {
-    padding: 30px 20px;
-}
-
-.card {
-    width: 20rem;
-    height: 400px;
-    margin: 20px 60px;
-    top: 0px;
-    // border-radius: 10px;
-    z-index: 0;
-    overflow: visible;
-    border: none;
-    background-color: transparent;
-}
-
-.card .face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    // border-radius: 10px;
-    transition: .5s;
-}
-
-.card .front {
-    transform: perspective(600px) rotateY(0deg);
-    // box-shadow: 0 5px 10px #000;
-}
-
-.card .front img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    // border-radius: 8px;
-}
-
-.card .front h3 {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 45px;
-    line-height: 45px;
-    color: #fff;
-    background: rgba(0, 0, 0, .4);
-    text-align: center;
-    font-size: 12px;
-}
-
-.card .back {
-    transform: perspective(600px) rotateY(180deg);
-    background: rgb(3, 35, 54);
-    padding: 15px;
-    color: #f3f3f3;
+.bv {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #333;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    font-family: sans-serif;
+    background-color: #f1f1f1; 
+}
+img {
+    display: block;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+  
+    
+  }
+.container {
+    width: 1000px;
+    position: relative;
+    display: flex;
+    background-color: rgba(0, 255, 213, 0.863);;
     justify-content: space-between;
+}
+
+.container .card {
+    position: relative;
+    border-radius: 10px;
+    background-color:rgba(0, 255, 213, 0.863);
+}
+
+.container .card .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 255, 213, 0.863);
+    transition: 0.7s;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+.container .card .face {
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+    
+}
+
+.container .card .face.face1 {
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face1{
+    background: #ff0057;
+    transform: translateY(0px);
+}
+
+.container .card .face.face1 .content {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.container .card:hover .face.face1 .content {
+    opacity: 1;
+}
+
+.container .card .face.face1 .content i{
+    max-width: 100px;
+}
+
+.container .card .face.face2 {
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2{
+    transform: translateY(0);
+}
+
+.container .card .face.face2 .content p {
+    margin: 0;
+    padding: 0;
     text-align: center;
-    // box-shadow: 0 5px 10px #000;
+    color: #414141;
 }
 
-.card .back .link {
-    border-top: solid 1px #f3f3f3;
-    height: 50px;
-    line-height: 50px;
-}
-
-.card .back .link a {
-    color: #f3f3f3;
-}
-
-.card .back h3 {
-    font-size: 23px;
-    margin-top: 20px;
-    letter-spacing: 2px;
-}
-
-.card .back p {
-    letter-spacing: 1px;
-    font-size: 11.56px;
-}
-
-.card:hover .front {
-    transform: perspective(600px) rotateY(180deg);
-}
-
-.card:hover .back {
-    transform: perspective(600px) rotateY(360deg);
-}
-
-.header {
-    text-align: center;
+.container .card .face.face2 .content h3 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: #fff;
     font-size: 24px;
-    font-weight: 900;
-}
-
-.ko {
-    margin: 0 50px;
     text-align: center;
-    font-size: 1rem;
-    font-family: 'Franklin Gothic Medium';
-    color: rgb(18, 175, 214);
-    background: rgba($color: rgb(18, 175, 214), $alpha: 0.1);
-}
+    color: #414141;
+} 
 
-////////////////////////////////////////////////////////////////////////////////////
-.light {
-    .card .front {
-        transform: perspective(600px) rotateY(0deg);
-        box-shadow: 0 5px 10px #000;
-    }
-    .ko {
-        color: rgb(18, 175, 214);
-        background: rgba($color: rgb(18, 175, 214), $alpha: 0.1);
-    }
-    .card .back .link a {
-        color: #f3f3f3;
-    }
-    .card .back .link {
-        border-top: solid 1px #f3f3f3;
-    }
-    .fg {
-        background-color: rgba($color: (#fff), $alpha: 0.9);
-    }
-    .card .back {
-        box-shadow: 0 5px 10px #000;
-    }
-}
-
-/////////////////////////////////////////////////////////////////////////////////////
-.dark {
-    .ko {
-        color: #10f32e;
-        background: #fff;
-    }
-}
-
-#technologies {
-    padding-top: 75px;
+.container a {
+    text-decoration: none;
+    color: #414141;
 }
