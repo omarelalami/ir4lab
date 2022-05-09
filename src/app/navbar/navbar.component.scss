@@ -2,8 +2,11 @@
     scroll-behavior: smooth;
     z-index: 99;
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-bottom: 1px solid #108db1;
+    // background-color: rgba(255, 255, 255, 0.8);
+    // border-top: 2px solid white;
+    border-bottom: 1px solid rgba($color: #fff, $alpha: 0.1);
+    // border-left: 2px solid #7ab9d4;
+    background: rgba($color: #151F3E, $alpha: 1);
 }
 
 .navbar-toggler {
@@ -11,12 +14,24 @@
     box-shadow: none !important;
 }
 
+.navbar-brand {
+    border-right: 4px solid #fff;
+    border-top: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+    border-left: 4px solid #fff;
+    box-shadow: 0 0 20px #ccc;
+    // border-radius: 50%;
+    background-color: rgba($color: #fff, $alpha: 1);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
 .navbar-brand img {
     width: 100px;
 }
 
 .nav-item a {
-    color: #108db1;
+    color: #fff;
     font-weight: 600;
     cursor: pointer;
 }
