@@ -142,4 +142,8 @@ $sec:#00a2e2;
     transition: all 1px;
 }
 
-.list-wrapper {}
+.list-wrapper {
+    position: absolute;
+    top: 50px;
+    background-color: $prim;
+}
