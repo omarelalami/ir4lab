@@ -1,4 +1,5 @@
-<div class="collapsibleNavId rectangle"></div>
+<div class="collapsibleNavId  collapse rectangle rectangle-right"></div>
+<div class="collapsibleNavId collapse rectangle rectangle-left"></div>
 <nav id="navbar" class="navbar  navbar-expand-md fixed-top navbar-light" [ngClass]="{'is-sticky': sticky == true}">
     <div class="container">
         <a class="navbar-brand" routerLink="/">
@@ -8,34 +9,33 @@
 
       <fa-icon [icon]="faBars"></fa-icon>
     </button>
-        <div class="collapse navbar-collapse collapsibleNavId">
-            <div class="container-fluid nav-wrapper p-0 m-0 ">
+        <div class="collapse navbar-collapse collapsibleNavId d-flex justify-content-end">
 
-                <div id="list-wrapper">
-                    <ul class="navbar-nav me-auto mt-lg-0 w-100  h-100 d-flex justify-content-end align-items-center">
-                        <li class="nav-item active ">
-                            <a class="nav-link " (click)="toHome();show();">Home <span class="visually-hidden">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " (click)="toAbout();show();">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " (click)="toServices();show();">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " (click)="toProjects();show();">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " (click)="toTechnologies();show();">Technologies</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " (click)="toContact();show();">Contact Us</a>
+            <div id="list-wrapper" class=" collapsibleNavId collapse d-flex justify-content-center align-items-center">
+                <ul class="navbar-nav me-auto mt-lg-0 w-100  h-100 d-flex justify-content-center">
+                    <li class="nav-item active ">
+                        <a class="nav-link " (click)="toHome();show();">Home <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " (click)="toAbout();show();">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " (click)="toServices();show();">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " (click)="toProjects();show();">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " (click)="toTechnologies();show();">Technologies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " (click)="toContact();show();">Contact Us</a>
 
-                        </li>
+                    </li>
 
-                    </ul>
-                </div>
+                </ul>
             </div>
         </div>
     </div>
+
 </nav>
