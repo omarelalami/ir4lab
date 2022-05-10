@@ -5,25 +5,38 @@ import {
   AfterViewInit,
   ViewChild,
   ViewChildren,
-  QueryList
+  QueryList,OnDestroy
 } from "@angular/core";
+
+import { NgsRevealService } from 'ngx-scrollreveal';
+
 
 @Component({
   selector: "app-facts",
   templateUrl: "./facts.component.html",
   styleUrls: ["./facts.component.scss"]
 })
-export class FactsComponent implements OnInit, AfterViewInit {
+export class FactsComponent implements OnInit, AfterViewInit, OnDestroy {
   title = "Animated Count";
 
   nums: Array<number> = [25, 76, 48];
 
   @ViewChild("oneItem") oneItem: any;
   @ViewChildren("count") count: QueryList<any>|any;
+  afterRevealSubscription: any;
 
-  constructor(private elRef: ElementRef) {}
+  constructor(private elRef: ElementRef,private revealService: NgsRevealService) {}
+  ngOnDestroy(): void {
+    this.afterRevealSubscription.unsubscribe();
 
-  ngOnInit() {}
+  }
+
+  ngOnInit() {
+    this.afterRevealSubscription = this.revealService.afterReveal$.subscribe(
+      (el: HTMLElement) => {
+        this.animateCount();
+    });
+  }
 
   ngAfterViewInit() {
     this.animateCount();

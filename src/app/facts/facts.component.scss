@@ -1,8 +1,14 @@
+$prim :#151F3E;
+$sec:#00a2e2;
+
+/* Colors */
+
 #facts {
     padding: 20px;
     text-align: center;
     background-size: 55px 55px;
-    background-color: #4ab8c4ae;
-    border-top: 4px solid #fff;
-    border-bottom: 4px solid #4ab8c4;
+    background-color: rgba($color: $sec, $alpha: 0.2);
+    border-top: 4px solid rgba($color: $sec, $alpha: 0.1);
+    color: $prim;
+    border-bottom: 4px solid $sec;
 }

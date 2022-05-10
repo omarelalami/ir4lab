@@ -1,0 +1,30 @@
+h2 {
+    font-weight: 800;
+    padding: 10px;
+    text-align: center;
+}
+
+h2 span {
+    color: $sec;
+}
+
+$veryLightGray: hsl(0, 0%, 98%);
+$weight1: 200;
+$weight2: 400;
+$weight3: 600;
+$blue:hsl(212, 86%, 64%);
+$grayishBlue: hsl(229, 6%, 66%);
+$darkblue:hsl(234, 12%, 34%);
+$cyan:hsl(180, 62%, 55%);
+$orange:hsl(34, 97%, 64%);
+$red:hsl(0, 78%, 62%);
+$prim :#151F3E;
+$sec:#00a2e2;
+
+/* Colors */
+
+$black: #1d1f20;
+$blue: #83e4e2;
+$green: #64f581;
+$yellow: #fddc32;
+$white: #fafafa;

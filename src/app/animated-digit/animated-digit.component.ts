@@ -5,19 +5,35 @@ import {
   AfterViewInit,
   ViewChild,
   OnChanges,
-  SimpleChanges
+  SimpleChanges,OnDestroy,
+  OnInit
 } from "@angular/core";
+import { NgsRevealService } from 'ngx-scrollreveal';
 
 @Component({
   selector: "animated-digit",
   templateUrl: "animated-digit.component.html",
   styleUrls: ["animated-digit.component.scss"]
 })
-export class AnimatedDigitComponent implements AfterViewInit, OnChanges {
+export class AnimatedDigitComponent implements OnInit,AfterViewInit, OnChanges,OnDestroy {
+  afterRevealSubscription: any;
+  ngOnDestroy(): void {
+    this.afterRevealSubscription.unsubscribe();
+  }
   @Input() duration: number|any;
   @Input() digit: number|any;
   @Input() steps: number|any;
   @ViewChild("animatedDigit") animatedDigit: ElementRef|any;
+  constructor(private revealService: NgsRevealService){
+
+  }
+  ngOnInit(): void {
+    this.afterRevealSubscription = this.revealService.afterReveal$.subscribe(
+      (el: HTMLElement) => {
+        this.animateCount()
+    });
+
+  }
 
   async animateCount() {
     if (!this.duration) {

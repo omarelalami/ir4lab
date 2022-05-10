@@ -1,3 +1,5 @@
+$prim :#151F3E;
+$sec:#00a2e2;
 .navbar {
     scroll-behavior: smooth;
     z-index: 99;
@@ -46,9 +48,11 @@
         z-index: 1111;
         color: white;
     }
+    .nav-toggler.collapsed {
+        background-color: #fff;
+    }
     .nav-wrapper {
         position: absolute !important;
-        background: rgba(0, 0, 0, 0.9) !important;
         top: 0 !important;
         left: 0 !important;
         width: 100vw !important;
@@ -103,3 +107,39 @@
         color: white;
     }
 }
+
+.is-sticky {
+    transition: all 0.3s;
+    background-color: #fff;
+    // border-bottom: 1px solid rgba($color: $prim, $alpha: 0.1);
+    box-shadow: 0 0 20px rgba($color: $prim, $alpha: 0.1);
+}
+
+.is-sticky a {
+    color: $prim !important;
+}
+
+.is-sticky .navbar-brand {
+    border: none;
+    box-shadow: none;
+    background: none;
+}
+
+#navbar {
+    transition: all 0.3s;
+    z-index: 5;
+}
+
+.rectangle {
+    background-color: #fff;
+    position: absolute;
+    top: 30px;
+    width: 60px;
+    height: 100px;
+    right: 50px;
+    z-index: 4;
+    position: fixed;
+    transition: all 1px;
+}
+
+.list-wrapper {}

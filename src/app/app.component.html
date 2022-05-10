@@ -1,11 +1,12 @@
 <!-- <router-outlet></router-outlet> -->
-
-<app-navbar></app-navbar>
-<app-home [ngsReveal]="{ reset : true, duration: 1000}"></app-home>
-<app-about-us [ngsReveal]="{ reset : true, duration: 1000}"></app-about-us>
-<app-services [ngsReveal]="{ reset : true, duration: 1000}"></app-services>
-<app-projects [ngsReveal]="{ reset : true, duration: 1000}"></app-projects>
-<app-facts [ngsReveal]="{ reset : true, duration: 1000}"></app-facts>
-<app-technologies [ngsReveal]="{ reset : true, duration: 1000}"></app-technologies>
-<app-contact-us [ngsReveal]="{ reset : true, duration: 1000}"></app-contact-us>
-<app-footer [ngsReveal]="{ reset : true, duration: 1000}"></app-footer>
+<div (scroll)="onWindowScroll($event);">
+    <app-navbar></app-navbar>
+    <app-home [ngsReveal]="{ reset : true, duration: 1000}"></app-home>
+    <app-about-us [ngsReveal]="{ reset : true, duration: 1000}"></app-about-us>
+    <app-services [ngsReveal]="{ reset : true, duration: 1000}"></app-services>
+    <app-projects [ngsReveal]="{ reset : true, duration: 1000}"></app-projects>
+    <app-facts [ngsReveal]="{ reset : true, duration: 1000}"></app-facts>
+    <app-technologies [ngsReveal]="{ reset : true, duration: 1000}"></app-technologies>
+    <app-contact-us [ngsReveal]="{ reset : true, duration: 1000}"></app-contact-us>
+    <app-footer [ngsReveal]="{ reset : true, duration: 1000}"></app-footer>
+</div>

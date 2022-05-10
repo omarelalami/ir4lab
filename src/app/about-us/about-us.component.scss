@@ -1,5 +1,5 @@
         /*** VARIABLES ***/
-        
+
         $veryLightGray: hsl(0, 0%, 98%);
         $weight1: 200;
         $weight2: 400;
@@ -13,7 +13,7 @@
         $prim :#151F3E;
         $sec:#00a2e2;
         /* Colors */
-        
+
         $black: #1d1f20;
         $blue: #83e4e2;
         $green: #64f581;
@@ -21,11 +21,11 @@
         $white: #fafafa;
         /*** EXTEND ***/
         /* box-shadow */
-        
+
         %boxshadow {
             box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05), 0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
         }
-        
+
         .container {
             position: relative;
             width: 100%;
@@ -36,7 +36,7 @@
             padding: 20px 20px;
             z-index: 1;
         }
-        
+
         .container:after {
             content: '';
             position: absolute;
@@ -49,28 +49,28 @@
             filter: blur(50px);
             z-index: -1;
         }
-        
+
         .about-box {
             max-width: 1024px;
             justify-content: center;
             align-items: center;
             // box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
         }
-        
+
         .list {
             padding: 25px 40px;
         }
-        
+
         h2 {
             font-weight: 800;
             padding: 10px;
             text-align: center;
         }
-        
+
         h2 span {
             color: $sec;
         }
-        
+
         p {
             font-family: 'helvetica';
             padding: 10px;
@@ -78,12 +78,12 @@
             text-align: justify;
             margin-bottom: 0;
         }
-        
+
         .Logo {
             width: 250px;
             padding: 15px;
         }
-        
+
         @media screen and (max-width: 880px) {
             .container {
                 padding: 0;
@@ -92,11 +92,11 @@
                 grid-template-columns: 1fr;
             }
         }
-        
+
         .box p {
             color: $grayishBlue;
         }
-        
+
         .box {
             border-radius: 5px;
             box-shadow: 0px 30px 40px -20px $grayishBlue;
@@ -104,41 +104,41 @@
             margin: 10px;
             background-color: #fff;
         }
-        
+
         @media (max-width: 450px) {
             .box {
                 min-height: 180px;
             }
         }
-        
+
         @media (max-width: 950px) and (min-width: 450px) {
             .box {
                 text-align: center;
                 min-height: 180px;
             }
         }
-        
+
         .cyan {
             border-top: 3px solid $cyan;
         }
-        
+
         .red {
             border-top: 3px solid $red;
         }
-        
+
         .blue {
             border-top: 3px solid $blue;
         }
-        
+
         .orange {
             border-top: 3px solid $orange;
         }
-        
+
         h2 {
             color: $darkblue;
             font-weight: $weight3;
         }
-        
+
         @media (min-width: 950px) {
             .row1-container {
                 display: flex;
@@ -158,23 +158,23 @@
                 width: 30%;
             }
         }
-        
+
         .cyan fa-icon {
             color: $cyan;
         }
-        
+
         .orange fa-icon {
             color: $orange;
         }
-        
+
         .red fa-icon {
             color: $red;
         }
-        
+
         .blue fa-icon {
             color: $blue;
         }
-        
+
         .box>div {
             text-align: end;
         }

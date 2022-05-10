@@ -8,14 +8,14 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 })
 export class NavbarComponent implements OnInit {
   faBars = faBars;
-
+  sticky :any;
 
   constructor( ) {
-   
+
    }
 
   ngOnInit(): void {
-    
+
   }
   show(){
     var el1 = document.getElementById("collapsibleNavId");
@@ -59,8 +59,22 @@ export class NavbarComponent implements OnInit {
   block: 'start',
   inline: 'nearest'})
   }
+  onScroll(event:any){
+    this.sticky=true;
+  }
 
 
 
 
 }
+// window.addEventListener("scroll", function() {
+//   let navArea = document.getElementById("navbar");
+
+//   if (window.pageYOffset > 200) {
+//   navArea?.classList.add("");
+
+//   } else {
+//   navArea?.classList.remove("is-sticky");
+
+//   }
+//   });
