@@ -1,35 +1,35 @@
-import { TestBed } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
-import { AppComponent } from './app.component';
+import { Component, OnInit, HostListener, Inject } from '@angular/core';
 
-describe('AppComponent', () => {
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule
-      ],
-      declarations: [
-        AppComponent
-      ],
-    }).compileComponents();
-  });
+import { trigger, state, transition, style, animate } from '@angular/animations';
+import { DOCUMENT } from '@angular/common';
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss'],
+  animations:[
+    trigger('fade',
+    [
+      state('void', style({ opacity : 0})),
+      transition(':enter',[ animate(300)]),
+      transition(':leave',[ animate(500)]),
+    ]
+)]
+})
+export class AppComponent {
+  constructor(@Inject(DOCUMENT) document:Document){
 
-  it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
-  });
+  }
 
-  it(`should have as title 'ir4lab'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('ir4lab');
-  });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('ir4lab app is running!');
-  });
-});
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll(e:any) {
+     if (window.pageYOffset > 550) {
+       let element = document.getElementById('navbar');
+       element?.classList.add('is-sticky');
+     } else {
+      let element = document.getElementById('navbar');
+        element?.classList.remove('is-sticky');
+     }
+  }
+  title = 'ir4lab';
+}

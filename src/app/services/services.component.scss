@@ -1,5 +1,5 @@
 .our-services {
-    padding-top: 110px;
+    padding-top: 120px;
   }
   
   .our-services .section-heading {
@@ -15,43 +15,8 @@
   .service-item {
     padding: 60px 30px;
     border: 2px solid #f7f7f7;
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;900&display=swap');
-$prim :#151F3E;
-$sec:#00a2e2;
-* {
-    margin: 0;
-    padding: 8;
-    box-sizing: border-box;
-    font-family: 'Noto Sans JP', sans-serif;
-}
-
-h2 {
-    font-weight: 800;
-    padding: 10px;
-    text-align: center;
-}
-
-h2 span {
-    color: $sec;
-}
-
-.cards_wrap {
-    padding: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.cards_wrap .card_item {
-    padding: 15px 25px;
-    width: 33%;
-}
-
-.cards_wrap .card_inner {
-    background: #fff;
     border-radius: 5px;
-    transition: all .9s;
+    transition: all .3s;
     margin-bottom: 30px;
     height: 300px;
   }
@@ -73,7 +38,10 @@ h2 span {
     border-radius: 50%;
   }
   
-
+  .service-item .icon img {
+      width: 38px;
+      height: 38px;
+  }
   
   .service-item h4 {
     font-size: 22px;
@@ -81,4 +49,9 @@ h2 span {
     color: #2a2a2a;
     margin-bottom: 15px;
   }
-}
+  @media (max-width: 768px)
+  {
+      .service-item{
+          height: 400px;
+      }
+  }
