@@ -1,163 +1,179 @@
-/*** VARIABLES ***/
-
-
-/* Colors */
-
-$black: #1d1f20;
-$blue: #83e4e2;
-$green: #64f581;
-$yellow: #fddc32;
-$white: #fafafa;
-
-/*** EXTEND ***/
-
-
-/* box-shadow */
-
-%boxshadow {
-    box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05), 0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
-}
-
-.container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 110px 100px;
-}
-
-.container:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    //background: url("../../assets/images/ig2.jpg") no-repeat center;
-    background-size: cover;
-    filter: blur(50px);
-    z-index: -1;
-}
-
-.about-box {
-    max-width: 850px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
-}
-
-.left {
-    padding: 25px 40px;
-    height: 100%;
-}
-
-.right {
-    grid-column: 2 / span 2;
-    padding: 25px 40px;
-}
-
-h2 {
-    font-weight: 800;
-    padding: 10px;
-    text-align: center;
-}
-
-p {
-    font-family: 'helvetica';
-    padding: 10px;
-    color: gray;
-    text-align: justify;
-}
-
-ul.gradient-list {
-    counter-reset: gradient-counter;
-    list-style: none;
-    margin: 1.75rem 0;
-    padding-left: 1rem;
-    >li {
-        transition: all 1s;
-        background: white;
-        border-radius: 0 0.5rem 0.5rem 0.5rem;
-        @extend %boxshadow;
-        counter-increment: gradient-counter;
-        font-size: small;
-        margin-top: 1rem;
-        min-height: 3rem;
-        padding: 1rem 1rem 1rem 3rem;
-        position: relative;
-        &::before,
-        &::after {
-            transition: all 1s;
-            background: linear-gradient(135deg, $blue 0%, $green 100%);
-            border-radius: 1rem 1rem 0 1rem;
-            content: '';
-            height: 3rem;
-            left: -1rem;
-            overflow: hidden;
-            position: absolute;
-            top: -1rem;
-            width: 3rem;
-        }
-        &::before {
-            align-items: flex-end;
-            @extend %boxshadow;
-            content: '';
-            color: $black;
-            display: flex;
-            font: 900 1em/1 'helvetica';
-            justify-content: flex-end;
-            padding: 0.125em 0.25em;
-            z-index: 1;
-        }
-        &:hover::after,
-        &:hover::before {
-            transition: all 1s;
-            height: 6rem;
-            width: 3.5rem;
-        }
-        &:hover {
-            background: #e6e6e6;
-        }
-        @for $i from 1 through 5 {
-            &:nth-child(10n+#{$i}):before {
-                background: linear-gradient(135deg, rgba($green, $i * 0.2) 0%, rgba($yellow, $i * 0.2) 100%);
-            }
-        }
-        @for $i from 6 through 10 {
-            &:nth-child(10n+#{$i}):before {
-                background: linear-gradient(135deg, rgba($green, 1 - (($i - 5) * 0.2)) 0%, rgba($yellow, 1 - (($i - 5) * 0.2)) 100%);
-            }
-        }
-        +li {
-            margin-top: 2rem;
-        }
+    /*** VARIABLES ***/
+    
+    $veryLightGray: hsl(0, 0%, 98%);
+    $weight1: 200;
+    $weight2: 400;
+    $weight3: 600;
+    $blue:hsl(212, 86%, 64%);
+    $grayishBlue: hsl(229, 6%, 66%);
+    $darkblue:hsl(234, 12%, 34%);
+    $cyan:hsl(180, 62%, 55%);
+    $orange:hsl(34, 97%, 64%);
+    $red:hsl(0, 78%, 62%);
+    $prim :#151F3E;
+    $sec:#00a2e2;
+    /* Colors */
+    
+    $black: #1d1f20;
+    $blue: #83e4e2;
+    $green: #64f581;
+    $yellow: #fddc32;
+    $white: #fafafa;
+    /*** EXTEND ***/
+    /* box-shadow */
+    
+    %boxshadow {
+        box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05), 0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
     }
-}
-
-.Logo {
-    width: 250px;
-    padding: 15px;
-}
-
-@media screen and (max-width: 880px) {
+    
     .container {
-        padding: 0;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 20px;
     }
+    
+    .container:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        //background: url("../../assets/images/ig2.jpg") no-repeat center;
+        background-size: cover;
+        filter: blur(50px);
+        z-index: -1;
+    }
+    
     .about-box {
-        grid-template-columns: 1fr;
+        max-width: 1024px;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
     }
-    .left {
-        height: 300px;
+    
+    .list {
+        padding: 25px 40px;
+    }
+    
+    h2 {
+        font-weight: 800;
         padding: 10px;
+        text-align: center;
     }
-    .right {
-        grid-column: 1;
+    
+    h2 span {
+        color: $sec;
+    }
+    
+    p {
+        font-family: 'helvetica';
+        padding: 10px;
+        color: gray;
+        text-align: justify;
+        margin-bottom: 0;
+    }
+    
+    .Logo {
+        width: 250px;
         padding: 15px;
     }
-}
+    
+    @media screen and (max-width: 880px) {
+        .container {
+            padding: 0;
+        }
+        .about-box {
+            grid-template-columns: 1fr;
+        }
+    }
+    
+    .box p {
+        color: $grayishBlue;
+    }
+    
+    .box {
+        border-radius: 5px;
+        box-shadow: 0px 30px 40px -20px $grayishBlue;
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    @media (max-width: 450px) {
+        .box {
+            min-height: 180px;
+        }
+    }
+    
+    @media (max-width: 950px) and (min-width: 450px) {
+        .box {
+            text-align: center;
+            min-height: 180px;
+        }
+    }
+    
+    .cyan {
+        border-top: 3px solid $cyan;
+    }
+    
+    .red {
+        border-top: 3px solid $red;
+    }
+    
+    .blue {
+        border-top: 3px solid $blue;
+    }
+    
+    .orange {
+        border-top: 3px solid $orange;
+    }
+    
+    h2 {
+        color: $darkblue;
+        font-weight: $weight3;
+    }
+    
+    @media (min-width: 950px) {
+        .row1-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .row2-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box-down {
+            position: relative;
+            top: 150px;
+        }
+        .box {
+            width: 30%;
+        }
+    }
+    
+    .cyan fa-icon {
+        color: $cyan;
+    }
+    
+    .orange fa-icon {
+        color: $orange;
+    }
+    
+    .red fa-icon {
+        color: $red;
+    }
+    
+    .blue fa-icon {
+        color: $blue;
+    }
+    
+    .box>div {
+        text-align: end;
+    }
