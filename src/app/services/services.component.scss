@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;900&display=swap');
+$prim :#151F3E;
+$sec:#00a2e2;
 * {
     margin: 0;
     padding: 8;
@@ -6,10 +8,14 @@
     font-family: 'Noto Sans JP', sans-serif;
 }
 
-.wrapper .header {
+h2 {
+    font-weight: 800;
+    padding: 10px;
     text-align: center;
-    font-size: 24px;
-    font-weight: 900;
+}
+
+h2 span {
+    color: $sec;
 }
 
 .cards_wrap {

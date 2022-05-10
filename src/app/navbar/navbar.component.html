@@ -1,15 +1,17 @@
-<nav class="navbar navbar-expand-md navbar-light bg-transparent">
-    <nav class="navbar  navbar-expand-md fixed-top navbar-light   ">
-        <div class="container">
-            <a class="navbar-brand" routerLink="/">
-                <img src="../assets/img/Multicolor.png">
-            </a>
-            <button id="togglernav" class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+<div class="collapsibleNavId rectangle"></div>
+<nav id="navbar" class="navbar  navbar-expand-md fixed-top navbar-light" [ngClass]="{'is-sticky': sticky == true}">
+    <div class="container">
+        <a class="navbar-brand" routerLink="/">
+            <img src="../assets/img/Multicolor.png">
+        </a>
+        <button id="togglernav" class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
 
       <fa-icon [icon]="faBars"></fa-icon>
     </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <div class="container-fluid nav-wrapper p-0 m-0   ">
+        <div class="collapse navbar-collapse collapsibleNavId">
+            <div class="container-fluid nav-wrapper p-0 m-0 ">
+
+                <div id="list-wrapper">
                     <ul class="navbar-nav me-auto mt-lg-0 w-100  h-100 d-flex justify-content-end align-items-center">
                         <li class="nav-item active ">
                             <a class="nav-link " (click)="toHome();show();">Home <span class="visually-hidden">(current)</span></a>
@@ -35,4 +37,5 @@
                 </div>
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
