@@ -1,4 +1,3 @@
-
 $prim :#151F3E;
 $sec:#00a2e2;
 h2 {
@@ -11,7 +10,6 @@ h2 {
 h2 span {
     color: $sec;
 }
-
 
 #projects {
     padding-top: 120px;
@@ -40,7 +38,13 @@ h2 span {
     padding-bottom: 50px;
 }
 
+.wrap a {
+    position: relative;
+    text-decoration: none;
+}
+
 .box {
+    cursor: pointer;
     position: relative;
     top: 0;
     margin: 10px;
