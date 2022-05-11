@@ -1,7 +1,9 @@
 <div id="projects">
     <div class="features-content ">
-        <h2>proj<span>ects</span></h2>
-        <div class="row justify-content-center">
+        <div [ngsReveal]="{ reset : true, duration: 1000, origin: 'bottom', distance:'50px', scale: 0.5,viewFactor : 0}">
+            <h2>proj<span>ects</span></h2>
+        </div>
+        <div class="row justify-content-center" [ngsRevealSet]="{ reset : true, duration: 1500, origin: 'bottom', distance:'50px', scale: 0.5,viewFactor : 0}" [ngsSelector]="'.features-item'">
             <div class="col-lg-3">
                 <div class="features-item first-feature wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0s" style="visibility: visible;-webkit-animation-duration: 1s; -moz-animation-duration: 1s; animation-duration: 1s;-webkit-animation-delay: 0s; -moz-animation-delay: 0s; animation-delay: 0s;">
                     <div class="first-number number">
