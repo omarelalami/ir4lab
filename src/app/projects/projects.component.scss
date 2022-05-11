@@ -2,12 +2,15 @@
     padding-top: 130px;
   }
   
-  .features .features-content {
+  .features-content {
     z-index: 2;
     position: relative;
     background-color: #fff;
     border-radius: 50px;
+    height: 80vh !important;
+
     box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+    
   }
   
   .features-item {
@@ -20,6 +23,8 @@
     -webkit-transition: background-color .5s;
     -o-transition: background-color .5s;
     -moz-transition: background-color .5s;
+    width: 20vw;
+    margin: 300px;
   }
   
   .features-item:hover {
@@ -85,10 +90,10 @@
   }
   
   .features-item .icon {
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 85px;
     margin: 0 auto;
-   padding: 18px;
+   padding: 25px;
     transition: all 0.5s;
   }
   
