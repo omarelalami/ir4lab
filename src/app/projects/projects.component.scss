@@ -1,5 +1,8 @@
 #features {
     padding-top: 130px;
+  }
+  
+  .features-content {
 }
 
 $prim :#151F3E;
@@ -9,6 +12,13 @@ $sec:#00a2e2;
     position: relative;
     background-color: #fff;
     border-radius: 50px;
+    height: 80vh !important;
+
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+    
+  }
+  
+  .features-item {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -22,6 +32,16 @@ $sec:#00a2e2;
     -webkit-transition: background-color .5s;
     -o-transition: background-color .5s;
     -moz-transition: background-color .5s;
+    width: 20vw;
+    margin: 300px;
+  }
+  
+  .features-item:hover {
+    background: rgb(51,204,197);
+    background: linear-gradient(105deg, rgba(51,204,197,1) 0%, rgba(8,141,195,1) 100%);
+  }
+  
+  .features-item:hover h4 {
 }
 
 .features-item:hover {
@@ -70,7 +90,29 @@ $sec:#00a2e2;
 
 .features-item .first-number h6 {
     background-image: url(../../assets/images/features-number-01.png);
-}
+
+  }
+  
+  .features-item .second-number h6 {
+   background-image: url(../../assets/images/features-number-02.png);
+  }
+  
+
+  
+  .first-feature .icon {
+   //background-image: url(../images/features-icon-black-01.png);
+  }
+  
+  .second-feature .icon {
+   // background-image: url(../images/features-icon-black-02.png);
+  }
+  
+  .features-item .icon {
+    width: 100px;
+    height: 85px;
+    margin: 0 auto;
+   padding: 25px;
+
 
 .features-item .second-number h6 {
     background-image: url(../../assets/images/features-number-02.png);
@@ -89,6 +131,7 @@ $sec:#00a2e2;
     height: 90px;
     margin: 0 auto;
     padding: 18px;
+
     transition: all 0.5s;
 }
 
@@ -132,3 +175,4 @@ h2 span {
 #projects {
     padding-top: 120px;
 }
+  }
