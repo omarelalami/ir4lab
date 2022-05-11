@@ -18,16 +18,28 @@ export class NavbarComponent implements OnInit {
 
   }
   show(){
-    var el1 = document.getElementById("collapsibleNavId");
-    var el2 = document.getElementById("togglernav");
-    if(el1?.classList.contains('show') && el2?.classList.contains('collapsed')){
-      el1.classList.remove('show');
-      el2.classList.remove('collapsed');
+    var el1 = document?.getElementsByClassName("collapsibleNavId");
+    var el2 = document?.getElementsByClassName("togglernav");
+
+
+      Array.from(el1).forEach(function(item) {
+        if(item.classList.contains('show')){
+        item.classList.remove('show');
+      }
+      else{
+        item.classList.add('show');
+      }
+     });
+
+     Array.from(el2).forEach(function(item) {
+       if(item.classList.contains('collapsed')){
+      item.classList.remove('collapsed');
     }
-    else{
-      el1?.classList.add('show');
-      el2?.classList.add('collapsed');
+    else {
+      item.classList.add('collapsed');
     }
+   });
+
   }
   toHome(){
     document.getElementById("home")?.scrollIntoView({behavior: 'smooth',
