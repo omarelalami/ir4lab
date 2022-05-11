@@ -1,5 +1,5 @@
 <div id="facts">
-    <div class="row">
+    <div class="row" [ngsRevealSet]="{ reset : true, duration: 1000, origin: 'bottom', distance:'50px', scale: 0.5,viewFactor : 0}" [ngsSelector]="'.col-sm-3'">
         <div class="col-sm-3 col-xs-6">
             <div class="counter">
                 <animated-digit [digit]="5" [duration]="500"></animated-digit>
