@@ -1,8 +1,8 @@
-<div id="projects">
-    <h2>proj<span>ects</span></h2>
+<div id="projects" [ngsRevealSet]="{ reset : true, duration: 1500,origin: 'bottom', distance:'50px', scale: 0.5,viewFactor : 0}" [ngsSelector]="'.projhead'">
+    <h2 class="projhead">proj<span>ects</span></h2>
     <div class="container">
-        <div class="wrap">
-            <div class="box one">
+        <div class="wrap" [ngsRevealSet]="{ reset : true, duration: 1500,origin: 'bottom', distance:'50px', scale: 0.5,viewFactor : 0}" [ngsSelector]="'.projbox'">
+            <div class="box one projbox">
                 <a href="https://doccerts.com/" target="_blank">
                     <h1>Doccerts</h1>
                     <div class="poster p1">
@@ -10,7 +10,7 @@
                     </div>
                 </a>
             </div>
-            <div class="box two">
+            <div class="box two projbox">
                 <a href="https://seculedger.com/home" target="_blank">
                     <h1>Seculedger</h1>
                     <div class="poster p1">
